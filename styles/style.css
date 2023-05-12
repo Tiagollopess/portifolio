@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+        --cor-primaria: #e5e7e9;        /* root ela é um cod que faz vc gravar as cores em variaves, com isso poderar colocar os nomes salvos no seu projeto */
+        --cor-secundaria: #6c24be;
+        --cor-terciaria: #5062b4;
+        --cor-roxoescuro: #07042e
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+     color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%; /* primeiro % é o lado SUPERIOS o segundo canto DIREITO, terceiro INFERIOR e o ultimo Esquerdo   */
+ 
+}
+
+.cabecalho__menu {
+    display: flex; /* É pra disposição dos elementos */
+    gap: 80px; 
+}
+
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /* tamanho da Fonte */
+    font-weight: 600; /* peso da fonte */
+    color: var(--cor-terciaria);
+    text-decoration: none; /* Tirar o sublinhado do link ___ */
+}
+
+.apresentacao {
+    margin: 5% 15%; /* só com 2 fica com o canto Superior e Direito  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* justify contente space betwaeen ele vai deixar justificado seus itens no mesmo distanciamento igual na medida para todos */
+    gap: 82px;
+
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1,25rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none; 
+    
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     gap: 32px;
+
+}
+
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.37rem;
+}
+
+.apresentacao__links__link {
+    /* background-color: #22D4FD; */
+    display: flex;      /* É pra disposição dos elementos */
+    justify-content: center;  /* depois de usar display flex usar o j content colocar os elementos no centro  */
+    gap: 16px; /* espaçamento entre o texto   */
+    align-items: center;
+    border: 2px solid var(--cor-terciaria);
+    width: 23.62rem;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.31rem;
+    font-weight: 600;  /* Peso da fonte  */
+    padding: 20.5px 0;
+    color: var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+    background-color: #07042e;
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #6c24be, 0 0 10px  #6c24be, 0 0 10px  #6c24be, 0 0 10px #6c24be; 
+}
+
+.apresentacao__links__link:hover {  /* Mudar a cor quando passa com o cursor do mouse  */
+    background-color: #0bf7ffea;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+    box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 10px #6c24be, 0 0 10px  #6c24be, 0 0 10px  #6c24be, 0 0 10px #6c24be;  
+    
+}
+
+.rodape {
+    color: #000000;
+    background-color: #4f048b93;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.icones {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 0.7rem;
+    /* width: 51.55rem; */
+    margin-top: -25px;
+}
+
+.imgicone {
+    width: 20px;
+   /* box-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 10px #6c24be, 0 0 10px  #6c24be, 0 0 10px  #6c24be, 0 0 10px #6c24be; */
+}
+
+@media (max-width: 1200px) {
+    
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+  
+}
